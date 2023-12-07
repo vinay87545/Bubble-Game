@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: burlywood ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+#panel{
+    width: 80%;
+    height: 90%;
+    border-radius: 10px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+#ptop{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: darkgreen;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+    padding: 0 30%;  
+    justify-content: space-between;
+}
+
+.box{
+padding: 10px 20px;
+background-color: #fff;
+border-radius: 5px;
+color: greenyellow;
+font-weight: 600;
+font-size: 30px;
+}
+.elem{
+    
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  
+}
+
+#p-bottom{
+    width: 100%;
+   gap: 10px;
+    height: calc(100% - 100px);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.bubble{
+    width: 60px;
+    height: 60px;
+    background-color: darkgreen;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+.bubble:hover{
+    background-color: aquamarine;
+    cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    #ptop{
+       
+       padding: 0% 5%;
+    }
+    #ptop h2{
+       
+       font-size: 14px;
+    }
+
+    .box{
+        padding: 5px 10px;
+        font-size: 25px;
+    }
+
+    #elem{
+        gap: 0;
+    }
+  }
+
+
+  
+  @media only screen and (max-width: 1200px){
+    #ptop{
+        padding: 0% 15%;
+    }
+  }
